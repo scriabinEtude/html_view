@@ -5,7 +5,7 @@ import 'package:html_view/html_view.dart';
 HtmlView createHtmlView() =>
     throw UnsupportedError(HtmlView.unsupportedErrorMessage);
 
-class HtmlViewMobile implements HtmlView {
+class HtmlViewApp implements HtmlView {
   @override
   void initView(String viewId,
       {required String styleWidth,

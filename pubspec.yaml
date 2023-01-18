@@ -1,6 +1,6 @@
 name: html_view
 description: rendering .html file on Web Platform.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/scriabinEtude/html_view
 
 environment:
