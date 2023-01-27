@@ -18,14 +18,16 @@ class HtmlViewWeb implements HtmlView {
   }) {
     // ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory(
-        viewId,
-        (int id) => html.IFrameElement()
-          ..style.width = styleWidth
-          ..style.height = styleHeight
-          ..width = width
-          ..height = height
-          ..src = src
-          ..style.border = 'none');
+      viewId,
+      (int id) => html.IFrameElement()
+        ..style.width = styleWidth
+        ..style.height = styleHeight
+        ..width = width
+        ..height = height
+        ..src = src
+        ..style.border = 'none'
+        ..appendHtml('<div id="html_view" hidden>html_view<div>'),
+    );
   }
 
   @override
